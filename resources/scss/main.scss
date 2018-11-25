@@ -1,5 +1,11 @@
 // sass --watch resources/scss/main.scss:resources/css/main.css
 
+$broken-white: #e6efc2;
+$green: #98d3a6;
+$teal: #37afa8;
+$dark-blue: #496e7d;
+$brownish: #5b5451;
+
 html {
   font-size: 16px;
   font-family: 'Quicksand', sans-serif;
@@ -15,15 +21,14 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 0 2rem 0;
 
   h1 {
     padding: 15rem;
-    color: white;
+    color: $dark-blue;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: 3px 3px grey;
+    text-shadow: 3px 3px $green;
   }
 }
 
@@ -34,7 +39,34 @@ html {
   align-items: center;
   width: 100%;
 
-  .fotos {
-    width: 100%;
+  h1 {
+    color: $dark-blue;
+    text-shadow: 3px 3px $green;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
   }
+
+  .fotos {
+    width: 80%;
+    height: 200px;
+    margin: 0 0 20rem 0;
+
+    img {
+      height: 200px;
+      max-width: auto;
+    }
+  }
+}
+
+.slick-prev:before {
+  color: $dark-blue;
+  font-size: 40px;
+  position: relative;
+  right: 20px;
+}
+.slick-next:before {
+  color: $dark-blue;
+  font-size: 40px;
+  position: relative;
 }

@@ -11,15 +11,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 0 0 2rem 0; }
+  width: 100%; }
   #banner h1 {
     padding: 15rem;
-    color: white;
+    color: #496e7d;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: 3px 3px grey; }
+    text-shadow: 3px 3px #98d3a6; }
 
 #galerij {
   display: flex;
@@ -27,7 +26,29 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%; }
+  #galerij h1 {
+    color: #496e7d;
+    text-shadow: 3px 3px #98d3a6;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0; }
   #galerij .fotos {
-    width: 100%; }
+    width: 80%;
+    height: 200px;
+    margin: 0 0 20rem 0; }
+    #galerij .fotos img {
+      height: 200px;
+      max-width: auto; }
+
+.slick-prev:before {
+  color: #496e7d;
+  font-size: 40px;
+  position: relative;
+  right: 20px; }
+
+.slick-next:before {
+  color: #496e7d;
+  font-size: 40px;
+  position: relative; }
 
 /*# sourceMappingURL=main.css.map */
