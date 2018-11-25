@@ -20,23 +20,23 @@ html {
     text-align: center;
     text-shadow: 3px 3px #98d3a6; }
 
-#galerij {
+#gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; }
-  #galerij h1 {
+  #gallery h1 {
     color: #496e7d;
     text-shadow: 3px 3px #98d3a6;
     font-size: 2rem;
     font-weight: bold;
     margin: 2rem 0; }
-  #galerij .fotos {
+  #gallery .fotos {
     width: 80%;
     height: 200px;
-    margin: 0 0 20rem 0; }
-    #galerij .fotos img {
+    margin: 0 0 2rem 0; }
+    #gallery .fotos img {
       height: 200px;
       max-width: auto; }
 
@@ -50,5 +50,41 @@ html {
   color: #496e7d;
   font-size: 40px;
   position: relative; }
+
+#letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-image: url(../images/letter-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  #letter .kroatian {
+    margin: 5rem; }
+  #letter .dutch {
+    margin: 5rem;
+    display: none; }
+  #letter p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid white; }
+  #letter span {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 300ms ease; }
+    #letter span:hover {
+      background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

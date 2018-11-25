@@ -32,7 +32,7 @@ html {
   }
 }
 
-#galerij {
+#gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@ html {
   .fotos {
     width: 80%;
     height: 200px;
-    margin: 0 0 20rem 0;
+    margin: 0 0 2rem 0;
 
     img {
       height: 200px;
@@ -69,4 +69,52 @@ html {
   color: $dark-blue;
   font-size: 40px;
   position: relative;
+}
+
+#letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  width: 100%;
+  background-image: url(../images/letter-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  .kroatian {
+    margin: 5rem;
+  }
+
+  .dutch {
+    margin: 5rem;
+    display: none;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid white;
+  }
+
+  span {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+
+    &:hover {
+      background-color: white;
+    }
+  }
 }
